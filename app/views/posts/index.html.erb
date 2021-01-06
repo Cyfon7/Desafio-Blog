@@ -1,12 +1,12 @@
-<% new = true %>
+<% new_post = true %>
 <% @posts.reverse.each do |post| %>
     <article class="card my-5">
         <%= image_tag post.image_url, :class=>"card-img-top", :height=>"400" %>
         <div class="card-body">
             <h5 class="card-title">
                 <%= post.title %>
-                <% if new %> 
-                    <% new = false %>
+                <% if new_post %> 
+                    <% new_post = false %>
                     <span class="badge badge-pill badge-success">New</span>
                 <% end %>
             </h5>
