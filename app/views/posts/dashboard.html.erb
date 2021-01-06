@@ -1,0 +1,27 @@
+<div class="container pt-5">
+
+    <h1 class="text-center"> Welcome to </h1>
+    <h2 class="text-center"> Post Creation Module </h2>
+
+    <form id="create_posts" method="get" action="/posts/create">
+        <div class="form-group">
+            <label for="title">Title</label>
+            <input name="title" class="form-control" placeholder="Every great story needs a Title">
+        </div>
+
+        <div class="form-group">
+            <label for="image_url">Link Image</label>
+            <input name="image_url" class="form-control" placeholder="Enter an image link">
+        </div>
+
+        <div class="form-group">
+            <label for="content">Content</label>
+            <textarea name="content" class="form-control"></textarea> 
+        </div> 
+
+        <div class="text-right">
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+
+    </form>
+</div>
